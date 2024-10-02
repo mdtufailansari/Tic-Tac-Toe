@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    background: linear-gradient(#ff0000 20%,rgb(233, 231, 238),#0000ff );
+    height: 15vh;
+    text-align: center;
+    line-height: 10rem;
+    box-shadow: 5px 5px 10px rgba(41, 41, 43, 0.5);
+}
+#H1{
+    font-size: 5em;
+}
+
+.Container{
+    background-color:rgb(217, 216, 198);
+    height:85vh ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+.playerBox{
+    height: 20%;
+
+}
+.playerx{
+background-color: rgb(240, 7, 7);
+font-size: 4rem;
+border: 2px solid rgb(39, 38, 38);
+border-radius: 5px;
+box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.player0{
+    margin: 8% 0 0 0 ;
+    background-color: blue;
+    font-size: 4rem;
+    border: 2px solid rgb(39, 38, 38);
+    border-radius: 5px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+.ParentBox{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 33% 33.1% 33%;
+    grid-template-rows:33% 33% 33%;
+    grid-gap: 3px  3px ;
+    height:65%;
+    width:30%;
+    box-shadow: 3px 2px 10px rgba(0,0,0,0.9);
+    
+
+}
+.Childbox{
+    background-color:white;
+    text-align: center;
+    font-size:10rem;
+}
+#ResetBtn{
+    display: block;
+    background-color:orangered;
+    font-size: 3.5rem;
+border: 2px solid rgb(39, 38, 38);
+border-radius: 5px;
+box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+margin: 8% 0 0 0;
+}
+#ResetBtn:hover{
+    opacity: 80%;
+  }
+  
+#NewGameBtn{
+    background-color: rgb(17, 173, 17);
+    font-size: 3.7rem;
+border: 2px solid rgb(39, 38, 38);
+border-radius: 5px;
+box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+display: block;
+}
+
+ #NewGameBtn:hover{
+  opacity: 80%;
+}
+
+
+@media(max-width:768px){
+
+    html{
+    font-size: 35%;
+    }
+
+    #H1{
+   font-size: 50px;
+   line-height:130px ;
+    }
+
+    .Container{
+        display: flex;
+        align-content: center;
+    }
+    .ParentBox{
+        height: 280px;
+        width: 270px;
+       
+    }
+
+    .Childbox{
+        display: grid;
+        align-items: center;
+    }
+    .playerBox{
+      width: 350px;
+      display: flex;
+      justify-content: space-around;
+        height: 45px;
+    }
+    .playerx{
+        line-height: 35px;
+        font-size: 30px;
+    } 
+    .player0{
+         margin: 0;
+         line-height: 35px;
+         font-size: 30px;
+    }
+   
+    .ButtonBox{
+    
+        display: flex;
+      justify-content: space-around;
+        width: 300px;
+        height: 40px;
+    }
+    #NewGameBtn{
+        
+    }
+    #ResetBtn{
+       margin: 0;
+    }
+
+
+}
+
